@@ -2,6 +2,6 @@
 <br>
 <h2>Practice Projects</h2>
 <ul>
-  <lis>CatPhotoApp - https://vineet-vankar.github.io/FCC-Course/CatPhotoApp/index.html</lis>
+  <lis>CatPhotoApp - https://vineet-vankar.github.io/FCC-Course/CatPhotoApp/index.html</lis><br>
   <lis>CafeMenu - https://vineet-vankar.github.io/FCC-Course/CafeMenu/index.html</lis>
 </ul>
