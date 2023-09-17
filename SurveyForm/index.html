@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="ust-8">
+    <linl rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a Survey Form as my 1st project</p>
+    <form id="survey-form">
+      <fieldset>
+      <label>Enter Name
+        <input id="name" type="text" required>
+      </label>
+      <label>Enter Email
+        <input id="email" type="email" required>
+      </label>
+      <label>Enter Number
+        <input id="number" type="number" pattern="[0-9]{8,..,10}">
+      </label>
+      </fieldset>
+    </form>
+    <input id="submit" type="Submit">
+  </body>
+</html>
