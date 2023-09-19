@@ -5,20 +5,36 @@
     <linl rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">This is a Survey Form as my 1st project</p>
+    <div class="headline">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is a Survey Form as my 1st project</p>
+    </div>
     <form id="survey-form">
       <fieldset>
-      <label>Enter Name
-        <input id="name" type="text" required>
+      <label id="name-label">Enter Name
+        <input id="name" type="text" placeholder="Enter your Name" required>
       </label>
-      <label>Enter Email
-        <input id="email" type="email" required>
+      <label id="email-label">Enter Email
+        <input id="email" type="email" placeholder="Enter your Email" required>
       </label>
-      <label>Enter Number
-        <input id="number" type="number" pattern="[0-9]{8,..,10}">
+      <label id="number-label">Enter Number
+        <input id="number" type="[0,9]" min="{14}" max="{110}" palceholder="Enter your Age" >
       </label>
       </fieldset>
+      <div class="part-3">
+        <p>Do you like the form?</p>
+        <label><input id="yes" type="radio" name="yes-no" value="yes">Yes</label>
+        <label><input id="no" type="radio" name="yes-no" value="no">No</label>
+      </div>
+      <div class="part-4">
+        <p>What is your current status?</p>
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="1">Student</option>
+          <option value="2">Part-Timer</option>
+          <option value="3">Working</option>
+        </select>
+      </div>
     </form>
     <input id="submit" type="Submit">
   </body>
