@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lan="en">
   <head>
-    <meta charset="ust-8">
+    <meta charset="UTF-8">
     <linl rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="headline">
+    <div>
       <h1 id="title">Survey Form</h1>
       <p id="description">This is a Survey Form as my 1st project</p>
     </div>
     <form id="survey-form">
-      <fieldset>
-      <label id="name-label">Enter Name
+      <label id="name-label" for="name">Enter Name</label>
         <input id="name" type="text" placeholder="Enter your Name" required>
-      </label>
-      <label id="email-label">Enter Email
+      <label id="email-label" for="email">Enter Email</label>
         <input id="email" type="email" placeholder="Enter your Email" required>
-      </label>
-      <label id="number-label">Enter Number
-        <input id="number" type="[0,9]" min="{14}" max="{110}" palceholder="Enter your Age" >
-      </label>
-      </fieldset>
-      <div class="part-3">
+      <label id="number-label" for="number">Enter Number</label>
+        <input id="number" type="number" min="12" max="120" placeholder="Enter your Age" >
+      <hr>
+      <div>
         <p>Do you like the form?</p>
         <label><input id="yes" type="radio" name="yes-no" value="yes">Yes</label>
         <label><input id="no" type="radio" name="yes-no" value="no">No</label>
       </div>
-      <div class="part-4">
+      <div>
         <p>What is your current status?</p>
         <select id="dropdown">
           <option value="">Select</option>
@@ -35,6 +31,20 @@
           <option value="3">Working</option>
         </select>
       </div>
+      <hr>
+      <div class="font-fix">
+        <p>Coding languages you know</p>
+        <label><input id="python" type="checkbox" value="python">Python</label>
+        <label><input id="c" type="checkbox" value="c">C</label>
+        <label><input id="java" type="checkbox" value="java">Java</label>
+        <label><input id="c++" type="checkbox" value="c++">C++</label>
+        <label><input id="javascript" type="checkbox" value="javascript">JavaScript</label>
+        <label><input id="other" type="checkbox" value="other">Other</label>
+        <label><input id="none" type="checkbox" value="none">None</label>
+      </div>
+      <hr class="bottomline">
+      <label for="suggestion">Please provide suggestion</label>
+      <textarea id="suggestion" placeholder="Provide ways to make for attractive" rows="3" cols="35"></textarea>
     </form>
     <input id="submit" type="Submit">
   </body>
