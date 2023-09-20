@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+  
+p {
+   margin-top: 5px;
+   margin-left: 2px;
+}
+
+p[id="description"]{
+    text-align: center;
+}
+  
+body { 
+    background-color: rgb(190,230,203);
+    margin: auto;
+    width: 100%;
+    font-family: Tahoma;
+}
+  
+form {
+    padding-left: 15px;
+    max-width: 500ox;
+    min-width: 300px;
+    border: 1px solid #ced4da;
+}
+  
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input, select, textarea {
+    margin: 0.5;
+    margin-left: 0.5rem;
+    font-size: inherit;
+}
+  
+div {
+    margin-top: 20px;
+}
+
+select{
+    margin-top: 10px;
+}
+  
+input[id="submit"]{
+    display: block;
+    margin-top: 20px;
+    width: 60%;
+}
+  
+input[id="age"]{
+    width: 42%;
+}
+  
+hr {
+    color: rgba(220,180,230);
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+  
+.bottomline {
+    margin-bottom: 15px;
+}
