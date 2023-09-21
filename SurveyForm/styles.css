@@ -1,19 +1,19 @@
 h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
 }
   
 p {
-   margin-top: 5px;
-   margin-left: 2px;
+   margin: 5px 0 0 2px;
 }
 
 p[id="description"]{
     text-align: center;
+    margin-bottom: 10px;
 }
   
 body { 
-    background-color: rgb(190,230,203);
+    background-color: rgb(165, 223, 183);
     margin: auto;
     width: 100%;
     font-family: Tahoma;
@@ -23,7 +23,6 @@ form {
     padding-left: 15px;
     max-width: 500ox;
     min-width: 300px;
-    border: 1px solid #ced4da;
 }
   
 label {
@@ -39,6 +38,7 @@ input, select, textarea {
   
 div {
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 select{
@@ -51,12 +51,12 @@ input[id="submit"]{
     width: 60%;
 }
   
-input[id="age"]{
+input[id="number"]{
     width: 42%;
 }
   
 hr {
-    color: rgba(220,180,230);
+    color: rgba(85,100,197);
     margin-top: 20px;
     margin-bottom: -5px;
 }
@@ -64,3 +64,11 @@ hr {
 .bottomline {
     margin-bottom: 15px;
 }
+
+.container {
+    border: 3px solid red;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    background-color: rgb(97,112,206)
+  }
