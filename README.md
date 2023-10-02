@@ -6,6 +6,6 @@
   <lis>CafeMenu - https://vineet-vankar.github.io/FCC-Course/CafeMenu/index.html</lis><br>
   <lis>ColoredMarkers - https://vineet-vankar.github.io/FCC-Course/ColoredMarkers/index.html</lis><br>
   <lis>RegistrationForm - https://vineet-vankar.github.io/FCC-Course/RegistrationForm/index.html</lis><br>
-  <lis>RothkoPainting - https://vineet-vankar.github.io/FCC-Course/RothkoPainting/index.html</lis>
-  <lis>PhotoGallery</lis>
+  <lis>RothkoPainting - https://vineet-vankar.github.io/FCC-Course/RothkoPainting/index.html</lis><br>
+  <lis>PhotoGallery - https://vineet-vankar.github.io/FCC-Course/PhotoGallery/index.html</lis>
 </ul>
