@@ -9,6 +9,7 @@
   <lis>SurveyForm - https://vineet-vankar.github.io/FCC-Course/SurveyForm/index.html</lis><br>
   <lis>RothkoPainting - https://vineet-vankar.github.io/FCC-Course/RothkoPainting/index.html</lis><br>
   <lis>PhotoGallery - https://vineet-vankar.github.io/FCC-Course/PhotoGallery/index.html</lis><br>
+  <lis>NutritionLabel - https://vineet-vankar.github.io/FCC-Course/NutritionLabel/index.html</lis><br>
   <lis>BalanceSheet - https://vineet-vankar.github.io/FCC-Course/BalanceSheet/index.html</lis><br>
   <lis>AccessibilityQuiz - https://vineet-vankar.github.io/FCC-Course/AccessibilityQuiz/index.html</lis><br>
 </ul>
