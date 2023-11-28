@@ -20,3 +20,7 @@
   ><br>
 - > BalanceSheet - https://vineet-vankar.github.io/FCC-Course/BalanceSheet/index.html
   > <br>
+- > Cat Painting - https://vineet-vankar.github.io/FCC-Course/CatPainting/index.html
+  > <br>
+- > Piano - https://vineet-vankar.github.io/FCC-Course/Piano/index.html
+  > <br>
