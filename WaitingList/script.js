@@ -49,17 +49,13 @@ function displayAppointments(appointmentsToDisplay) {
 function filterAppointments() {
     const ageFilter = document.getElementById('ageFilter').value;
     const genderFilter = document.getElementById('genderFilter').value;
+
     const filteredAppointments = appointments.filter(appointment => {
-        if (ageFilter == 'all' && genderFilter == 'All') {
-            return true;
-        } else if (ageFilter == 'all' && genderFilter != 'All' ){
-            return appointment.age == ageFilter;
-        } else if (ageFilter != 'all' && genderFilter == 'All'){
-            return appointment.gender == genderFilter;
-        } else {
-            return appointment.age == ageFilter && appointment.gender == genderFilter;
-        }
+        const ageMatch = ageFilter === 'all' || appointment.age === ageFilter;
+        const genderMatch = genderFilter === 'All' || appointment.gender.toLowerCase() === genderFilter.toLowerCase();
+        return ageMatch && genderMatch;
     });
+
     displayAppointments(filteredAppointments);
 }
 
@@ -95,31 +91,6 @@ function searchAppointments() {
 
         // Check if patient name contains the search input and age matches the filter
         return patientName.includes(searchInput) && (ageFilter == 'all' || age == ageFilter);
-    });
-
-    displayAppointments(filteredAppointments);
-}
-
-// Function to sort the table based on column index and search input
-function sortAndSearchTable(columnIndex) {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-    const ageFilter = document.getElementById('ageFilter').value;
-    let filteredAppointments = appointments.filter(appointment => {
-        const patientName = appointment.patientName.toLowerCase();
-        const age = appointment.age;
-
-        // Check if patient name contains the search input and age matches the filter
-        return patientName.includes(searchInput) && (ageFilter == 'all' || age == ageFilter);
-    });
-
-    filteredAppointments.sort((a, b) => {
-        const valueA = a[Object.keys(a)[columnIndex]];
-        const valueB = b[Object.keys(b)[columnIndex]];
-        if (typeof valueA == 'string') {
-            return valueA.localeCompare(valueB);
-        } else {
-            return valueA - valueB;
-        }
     });
 
     displayAppointments(filteredAppointments);
