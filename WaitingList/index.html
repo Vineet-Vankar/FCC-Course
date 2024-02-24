@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waiting List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Waiting List</h1>
+      <hr />
+      <div class="controls">
+        <div class="sort">
+          Sort by:
+          <button onclick="sortTable(0)">Patient ID</button>
+          <button onclick="sortTable(1)">Patient Name</button>
+          <button onclick="sortTable(2)">Date</button>
+        </div>
+        <div class="filter">
+          Filter by Status:
+          <select id="ageFilter" onchange="filterAppointments()">
+            <option value="all">All</option>
+            <option value="Child">Child</option>
+            <option value="Adult">Adult</option>
+            <option value="MiddleAge">MiddleAge</option>
+            <option value="Old">Old</option>
+          </select>
+          <select id="genderFilter" onchange="filterAppointments()">
+            <option value="All">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        Search by Patient Name:
+        <input type="text" id="searchInput" oninput="searchAppointments()" />
+      </div>
+      <hr />
+
+      <table id="appointmentsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Patient Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Reason</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>ToDo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Appointments will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
