@@ -64,6 +64,10 @@
             margin-right: 20px;
         }
 
+        .hid {
+            display: none;
+        }
+
         /* .log button {
             margin-left: 0.5rem; Add some margin between buttons  
         } */
@@ -121,6 +125,47 @@
                 width: 100vw;
             }
         }
+
+        @media (max-width: 671px) {
+            nav {
+                display: none;
+            }
+            .log {
+                display: none;
+            }
+            #logo {
+                display: none;
+            }
+            .upp {
+                margin-right: 10px;
+            }
+            h1 {
+                font-size: 19.2px;
+            }
+            .hid {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-left: 10px;
+                font-size: 12px;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                outline: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .hid:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        }
+        
     </style>
 </head>
 <body>
